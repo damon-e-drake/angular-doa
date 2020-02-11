@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+$primary-doa: (
+  prim-0: #1d021a,
+  prim-1: #481842,
+  prim-2: #310a2c,
+  prim-3: #0e000c,
+  prim-4: #030003
+);
+
+$accent-doa: (
+  acc-0: #212803,
+  acc-1: #566421,
+  acc-2: #38430e,
+  acc-3: #0f1300,
+  acc-4: #040500
+);
+
+$base-colors: (
+  doa-blue-green: #607d8b,
+  doa-dark: #37474f,
+  doa-peach: #90a4ae,
+  doa-off-peach: lighten(#90a4ae, 15),
+  doa-accent: #f7b633
+);
+
+$lt-grey: #cecece;
+
+@each $prop, $val in $primary-doa {
+  .bg-#{$prop} {
+    background-color: $val !important;
+  }
+  .fg-#{$prop} {
+    color: $val !important;
+  }
+}
+
+@each $prop, $val in $accent-doa {
+    .bg-#{$prop} {
+      background-color: $val !important;
+    }
+    .fg-#{$prop} {
+      color: $val !important;
+    }
+  }
+
+@each $name, $hex in $base-colors {
+  .bg-#{$name} {
+    background-color: $hex !important;
+  }
+}
+
+.fg-lt-grey {
+    color: $lt-grey !important;
+}
+/* body {
+  background-color: map-get($primary-doa, prim-2);
+  color: #cecece;
+}
+
+.btn-primary {
+  background-color: map-get($base-colors, doa-accent);
+}
+ */
