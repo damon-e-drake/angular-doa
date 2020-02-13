@@ -51,12 +51,22 @@ $lt-grey: #cecece;
 .fg-lt-grey {
     color: $lt-grey !important;
 }
-/* body {
-  background-color: map-get($primary-doa, prim-2);
-  color: #cecece;
+
+body {
+  background-image: url('assets/bg-images/black-scales.png');
+  background-color :map-get($primary-doa, prim-0);
+  color: #bababa;
 }
 
-.btn-primary {
-  background-color: map-get($base-colors, doa-accent);
+input {
+  background-color: #481842 !important;
+  color: #cecece !important;
 }
- */
+
+.form-control {
+  border-color: lighten(#481842, 10);
+  &:focus {
+    border-color: #566421;
+    box-shadow: 0 0 0 0.2rem rgba(56, 67, 14, 0.25);
+  }
+}

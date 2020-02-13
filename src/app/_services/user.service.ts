@@ -19,13 +19,14 @@ export class UserService {
 
   private initObservables(): void {
     const lsUser: IUser = JSON.parse(localStorage.getItem("au"));
-    this._currentUser = new BehaviorSubject<IUser>({
+    /* this._currentUser = new BehaviorSubject<IUser>({
       id: 'xxxxxxxxx',
       firstName: 'Damon',
       lastName: 'Drake',
       displayName: 'Damon Drake',
       email: 'damon.e.drake@gmail.com'
-    });
+    }); */
+    this._currentUser = new BehaviorSubject<IUser>(null);
     this.currentUser = this._currentUser.asObservable();
   }
 
