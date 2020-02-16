@@ -1,40 +1,87 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-prim-1">
-  <a class="navbar-brand" routerLink="/">DOA</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-        <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-    </ul>
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-        <a *ngIf="currentUser" class="nav-link" routerLink="/logout">Logoout</a>
-        <a *ngIf="!currentUser" class="nav-link" routerLink="/login">Login</a>
-      </li>
-    </ul>
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">Damon</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="oi oi-menu"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="ftco-nav">
+      <ul class="navbar-nav mr-auto">
+        <li class="dropdown nav-item">
+          <a href="#" class="dropdown-toggle nav-link icon d-flex align-items-center" data-toggle="dropdown">
+            <i class="ion-ios-apps mr-2"></i>
+            Projects
+            <b class="caret"></b>
+          </a>
+          <div class="dropdown-menu dropdown-menu-left">
+            <a href="#" class="dropdown-item"><i class="ion-ios-apps mr-2"></i> All Components</a>
+            <a href="#" class="dropdown-item"><i class="ion-ios-document mr-2"></i> Documentation</a>
+          </div>
+        </li>
+        <li class="nav-item"><a href="#" class="nav-link icon d-flex align-items-center"><i class="ion-ios-cloud-download mr-2"></i> Download</a></li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a href="https://github.com/damon-e-drake" target="_blank" class="nav-link icon d-flex align-items-center"><i class="fab fa-fw fa-github"></i></a></li>
+        <li class="nav-item"><a href="https://stackoverflow.com/users/965258/damon-drake" target="_blank" class="nav-link icon d-flex align-items-center"><i class="fab fa-fw fa-stack-overflow"></i></a></li>
+        <li class="nav-item"><a href="#" class="nav-link icon d-flex align-items-center"><i class="fab fa-fw fa-windows"></i></a></li>
+      </ul>
+    </div>
   </div>
 </nav>
-<div class="jumbotron-fluid bg-prim-0 fg-lt-grey">
+<section class="hero-wrap js-fullheight img" style="background-image: url(assets/theme/images/mosaic-01.jpg); background-repeat:repeat; background-position: center;">
+  <!-- <div class="overlay"></div> -->
   <div class="container-fluid">
-    <br /><br/><br/>
-    <p>Hello</p>
+    <div class="row description js-fullheight align-items-center justify-content-center">
+      <div class="col-lg-3 text-center">
+        <div class="card" style="background: transparent; height:200px;">
+           <div class="card-header card-orange text-left">
+             <h4>Portfolio Project</h4>
+            </div>
+           <div class="card-body card-grey">
+             
+           </div>
+           <div class="card-footer card-grey">
+            <i class="fab fa-fw fa-angular fa-2x"></i> &nbsp; 
+            <i class="fab fa-fw fa-node-js fa-2x"></i> &nbsp; 
+            <i class="fab fa-fw fa-sass fa-2x"></i> &nbsp; 
+            <i class="fab fa-fw fa-bootstrap fa-2x"></i> &nbsp;
+            <i class="fab fa-fw fa-html5 fa-2x"></i>
+           </div>
+        </div>
+      </div>
+      <div class="col-lg-3 text-center">
+        <div class="card" style="background: transparent; height:200px;">
+           <div class="card-header card-orange text-left">
+             <h4>Portfolio Project</h4>
+            </div>
+           <div class="card-body card-grey">
+             
+           </div>
+           <div class="card-footer card-grey">
+            <i class="fab fa-fw fa-angular fa-2x"></i> &nbsp; 
+            <i class="fab fa-fw fa-node-js fa-2x"></i> &nbsp; 
+            <i class="fab fa-fw fa-sass fa-2x"></i> &nbsp; 
+            <i class="fab fa-fw fa-bootstrap fa-2x"></i> &nbsp;
+            <i class="fab fa-fw fa-html5 fa-2x"></i>
+           </div>
+        </div>
+      </div>
+      <div class="col-lg-3 text-center">
+        <div class="card" style="background: transparent; height:200px;">
+           <div class="card-header card-orange text-left">
+             <h4>Portfolio Project</h4>
+            </div>
+           <div class="card-body card-grey">
+             
+           </div>
+           <div class="card-footer card-grey">
+            <i class="fab fa-fw fa-angular fa-2x"></i> &nbsp; 
+            <i class="fab fa-fw fa-node-js fa-2x"></i> &nbsp; 
+            <i class="fab fa-fw fa-sass fa-2x"></i> &nbsp; 
+            <i class="fab fa-fw fa-bootstrap fa-2x"></i> &nbsp;
+            <i class="fab fa-fw fa-html5 fa-2x"></i>
+           </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</section>

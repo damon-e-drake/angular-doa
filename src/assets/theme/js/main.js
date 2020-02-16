@@ -138,27 +138,27 @@
 	contentWayPoint();
 
 
-	var slider = document.getElementById('slider');
+	// var slider = document.getElementById('slider');
 
-	noUiSlider.create(slider, {
-	    start: [20, 80],
-	    connect: true,
-	    range: {
-	        'min': 0,
-	        'max': 100
-	    }
-	});
+	// noUiSlider.create(slider, {
+	//     start: [20, 80],
+	//     connect: true,
+	//     range: {
+	//         'min': 0,
+	//         'max': 100
+	//     }
+	// });
 
-	var slider2 = document.getElementById('slider-2');
+	// var slider2 = document.getElementById('slider-2');
 
-	noUiSlider.create(slider2, {
-	    start: [50],
-	    connect: [true, false],
-	    range: {
-	        'min': 0,
-	        'max': 100
-	    }
-	});
+	// noUiSlider.create(slider2, {
+	//     start: [50],
+	//     connect: [true, false],
+	//     range: {
+	//         'min': 0,
+	//         'max': 100
+	//     }
+	// });
 
 	$('[data-toggle="popover"]').popover()
 	$('[data-toggle="tooltip"]').tooltip()

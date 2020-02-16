@@ -48,25 +48,19 @@ $lt-grey: #cecece;
   }
 }
 
-.fg-lt-grey {
-    color: $lt-grey !important;
-}
+.card-grey {
+  background-color: rgba(60, 60, 60, 0.5);
+  color: #efefef;
 
-body {
-  background-image: url('assets/bg-images/black-scales.png');
-  background-color :map-get($primary-doa, prim-0);
-  color: #bababa;
+  h1,h2,h3,h4,h5 {
+    color: #cecece;
+  }
 }
+.card-orange {
+  background-color: rgba(255, 51, 0, 0.4);
+  color:#bababa;
 
-input {
-  background-color: #481842 !important;
-  color: #cecece !important;
-}
-
-.form-control {
-  border-color: lighten(#481842, 10);
-  &:focus {
-    border-color: #566421;
-    box-shadow: 0 0 0 0.2rem rgba(56, 67, 14, 0.25);
+  h1,h2,h3,h4,h5 {
+    color: #bababa;
   }
 }
