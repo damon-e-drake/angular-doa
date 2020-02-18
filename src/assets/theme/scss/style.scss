@@ -17,9 +17,9 @@ $darken: #151111;
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
 }
 
 @mixin transition($transition) {
@@ -41,9 +41,9 @@ $darken: #151111;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6a48ff', endColorstr='#b4a3ff', GradientType=1 );
 }
 
-
 html {
 }
+
 body {
 	font-family: $font-primary;
 	font-size: 16px;
@@ -980,7 +980,7 @@ h1, h2, h3, h4, h5,
 	}
 	@include media-breakpoint-down(sm){
 		padding-left: 0;
-	}
+	}a
 }
 .blockquote{
 	border-left: 5px solid rgba(0,0,0,.05);
